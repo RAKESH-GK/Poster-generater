@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick post</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        #main {
+            height: 94vh;
+            padding-top: 12%;
+            background-image: url(images/login_full_back.png);
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        #main h1{
+            font-weight: 700;
+        }
+
+        #my_card {
+            padding: 20px;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+            padding: 10px;
+            text-align: center;
+            color: white;
+
+        }
+
+        @media screen and (max-width: 600px) {
+            #main {
+                height: 96vh;
+                background-image: url(images/login_back.png);
+                background-size: 100%;
+                padding-top: 100%;
+                padding-bottom: 200px;
+            }
+
+            #my_card {
+                padding: 10px;
+                background-color: transparent;
+            }
+
+            p {
+                color: white;
+                font-weight: 700;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container-fluid" id="main">
+    <center>
+        <h1>Quick Post</h1>
+       <h5>Poster generator</h5>
+       <br>
+        <div class="card shadow-sm" style="width: 18rem;" id="my_card">
+            <div class="">
+                <form action="dashboard.html" onsubmit="return sub()">
+                    <p>Enter Quickpost ID</p>
+                    <input class="text text-center p-1" type="text" id="code" name="code" required autocomplete="off" placeholder="*******"><br><br>
+                    <button class="btn btn-warning" type="submit" style="width: 100px">Enter</button>
+                    <br><br>
+                    <small>Forgot id ?<a href="#">click here</a></small>
+                </form>
+            </div>
+        </div>
+    </center>
+
+</div>
+<footer> Designed & devolped by Quick Post @ 2022</footer>
+
+
+    <script>
+         function sub(){
+             var id="dsi@123";
+             var value=document.getElementById("code").value;
+             if(value==id){
+                 return true;
+             }
+             else{
+                 alert("Enter correct Quickpost Id");
+                 return false;
+             }
+             
+         }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+/* header section start */
+.my_header {
+    height: 400px;
+    background-image: url(images/background.jpg);
+}
+
+/* header section end */
+
+/* Profile pic section start */
+.profile-pic-div {
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 140px;
+    width: 140px;
+    background-size: 100%;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+
+/* profilr pic section end */
+
+img {
+    width: 100%;
+}
+
+#editor_space {
+    position: relative;
+}
+
+#render_main {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: white;
+}
+
+#capture {
+    position: relative;
+    font-size: 3em;
+}
+
+#candidate_name {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 70%;
+    width: 90%;
+    text-align: center;
+    font-size: 35%;
+    color: darkblue;
+    font-weight: 600;
+}
+
+#quote__text {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 77%;
+    width: 80%;
+    text-align: center;
+    font-size: 25%;
+    color: darkblue;
+    word-break: keep-all;
+}
+
+#package {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 87%;
+    width: 90%;
+    text-align: center;
+    font-size: 35%;
+    color: darkblue;
+    font-weight: 600;
+}
+
+
+#photo {
+    object-fit: cover;
+}
+
+#file {
+    display: none;
+}
+
+#uploadBtn {
+    padding-top: 45%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: wheat;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+footer {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    bottom: 0px;
+
+}
+#gen_footer{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .profile-pic-div {
+        height: 105px;
+        width: 105px;
+    }
+
+    .my_header {
+        height: 94vh;
+        background-image: url(images/back.png);
+        background-size: 100%;
+    }
+
+    .my_header h1 {
+        margin-top: 45%;    
+    }
+    #render_main {
+        height: 50vh;
+    }
+
+    #candidate_name {
+        top:67%;
+        font-weight: 900;
+    }
+
+    #quote__text {
+        top:74%;
+       font-weight: 600; 
+    }
+
+    #package {
+        font-weight: 900;
+    }   
+}
